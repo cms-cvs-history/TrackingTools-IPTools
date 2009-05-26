@@ -227,7 +227,7 @@ pair<double,Measurement1D> jetTrackDistance(const TransientTrack & track, const 
 
 //FIXME: error not computed.
     GlobalVector H((jetVector.cross(dirTrack).unit()));
-    HepVector Hh(3);
+    CLHEP::HepVector Hh(3);
     Hh[0] = H.x();
     Hh[1] = H.y();
     Hh[2] = H.z();
